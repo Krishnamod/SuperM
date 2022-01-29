@@ -62,18 +62,29 @@ async def start_(client: Client, message: Message):
 @Client.on_message(commandpro(["/start", "Caden"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/de138de8fd880becb9cf1.jpg",
-        caption=f"""""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/Shayri_Music_Lovers")
-                ]
-            ]
-        ),
-    )
+        photo=f"https://telegra.ph/file/33a6f809c3ce77cdf51be.jpg",
 
+        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
+ᴄᴀᴅᴇɴ ɪs ᴍʏ ᴏᴡɴᴇʀ😎 ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪssᴜᴇ🙁 ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ❣️🌹] [ᴄᴀᴅᴇɴ](https://t.me/Caden_OP)
+━━━━━━━━━━━━━━━━━━━━━━━━**""",
+
+        reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "ᴄᴀᴅᴇɴ's ᴡɪғᴇ❣️", url=f"https://t.me/Caden_XD")
+
+                ]
+
+            ]
+
+        ),
+
+    )
 
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
